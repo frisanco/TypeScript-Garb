@@ -9,7 +9,4 @@ function greeter(person: Person) {
 
 let user = {firstName: "Ben", lastName: "Frisanco"};
 
-let selectmsg = "Please select your favorite movies:";
-
 document.body.innerHTML = greeter(user);
-document.body.innerHTML = selectmsg;
