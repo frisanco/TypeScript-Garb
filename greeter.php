@@ -15,7 +15,7 @@ $choice = $_SESSION['choice'];
     <body>
         <script src="greeter.js"></script>
         <div class="checks">
-            <form action="post.php" method="POST">
+            <form action="greeter-post.php" method="POST">
                 <p id="question">Please select your favorite superhero:</p>
 
                 <input type="radio" name="superhero" id="batman">
@@ -59,14 +59,15 @@ $choice = $_SESSION['choice'];
 
                 <p><input type="submit" name="submit" value="Go!"></p>
 
+                
+                <?php
+                echo '<pre>';
+                print_r($_POST); 
+                echo '</pre>';
+                ?>
+
             </form>
         </div>
-
-        <?php
-        echo '<pre>';
-        print_r($_REQUEST); 
-        echo '</pre>';
-        ?>
 
     </body>
 </html>
