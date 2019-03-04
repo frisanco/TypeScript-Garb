@@ -11,6 +11,7 @@ $choice = $_SESSION['choice'];
     <head>
         <title>Four Corners</title>
         <link rel="stylesheet" type="text/css" href="greeter.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         <script src="greeter.js"></script>
