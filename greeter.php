@@ -14,7 +14,8 @@ $choice = $_SESSION['choice'];*/
         <meta charset="UTF-8">
     </head>
     <body>
-        <script src="greeter.js"></script>
+        <!--<script src="greeter.js"></script> -->
+        <h1>Welcome to Four Corners!</h1>
         <div class="checks">
             <form action="greeter-post.php" method="post">
                 <p id="question">Please select your favorite superhero:</p>
@@ -62,6 +63,11 @@ $choice = $_SESSION['choice'];*/
 
             </form>
         </div>
+
+    <div class="room">
+        <div class="walls">
+        </div>
+    </div>
 
     </body>
 </html>
