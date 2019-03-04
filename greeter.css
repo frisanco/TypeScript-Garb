@@ -1,9 +1,9 @@
 body {
     background-color: green;
-    margin: 0 auto;
 }
 
 .checks {
+    display: inline-block;
     background-color: white;
     text-align: left;
 }

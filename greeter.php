@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['choice'])) {
+    $_SESSION['choice'] = null;
+}
+$choice = $_SESSION['choice'];
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +15,7 @@
     <body>
         <script src="greeter.js"></script>
         <div class="checks">
-            <form action="" method="POST">
+            <form action="post.php" method="POST">
                 <p id="question">Please select your favorite superhero:</p>
 
                 <input type="radio" name="superhero" id="batman">
