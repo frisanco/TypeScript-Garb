@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(!isset($_SESSION['choice'])) {
+/*if(!isset($_SESSION['choice'])) {
     $_SESSION['choice'] = null;
 }
-$choice = $_SESSION['choice'];
+$choice = $_SESSION['choice'];*/
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ $choice = $_SESSION['choice'];
     <body>
         <script src="greeter.js"></script>
         <div class="checks">
-            <form action="greeter-post.php" method="POST">
+            <form action="greeter-post.php" method="post">
                 <p id="question">Please select your favorite superhero:</p>
 
                 <input type="radio" name="superhero" id="batman">
@@ -59,13 +59,6 @@ $choice = $_SESSION['choice'];
                 <label for="soccer">Soccer</label><br>
 
                 <p><input type="submit" name="submit" value="Go!"></p>
-
-                
-                <?php
-                echo '<pre>';
-                print_r($_POST); 
-                echo '</pre>';
-                ?>
 
             </form>
         </div>
